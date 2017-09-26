@@ -1,9 +1,11 @@
-A simple iptable scripted android firewall flashable, mainly for blocking certain apps from sending any outputs hence potato that app's network capability. This was made before I realise that lineageos or Android Nougat in general can ground apps and disconnect them from the internet but it was still a fun learning experience poking with android init files as well as discovering playing around with modern android recovery's addon.d feature.
+A simple iptable scripte android firewall flashable, mainly for forcing DNS server for cellular networks(current implementation forces DNS on WiFi conenction too) and blocking certain apps from sending any outputs hence potato that app's network capability. This was made before I realise that lineageos or Android Nougat in general can ground apps and disconnect them from the internet but it was still a fun learning experience poking with android init files as well as discovering playing around with modern android recovery's addon.d feature.
 
-If you're only interested in the script, check /system/etc/firewall.sh on this repository
+If you're flashing it please note that this was only tested on lineageos 14.1 with su addon.
+
+If you're only interested in the script which is rather universal, check /system/etc/firewall.sh on this repository.
 
 Features(/system/etc/firewall.sh):
 
-Block apps from accessing the internet by providing a list of package name in /data/appNetBlacklist_last
+Block apps from accessing the internet by providing a list of package name in /data/appNetBlacklist_last. As an example by default if the list file does not exist it will create a file that blocks wps office's outgoing traffic.
 
-Force DNS server by redirecting all udp port 53 traffic to ip address stored in /data/nameserver
+Forces DNS server by redirecting all udp port 53 traffic to ip address stored in /data/nameserver.
