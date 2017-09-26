@@ -1,0 +1,8 @@
+# firewall
+service firewall /system/bin/logwrapper /system/etc/firewall.sh
+	class late_start
+	user root
+	group root
+	oneshot
+	seclabel u:r:sudaemon:s0
+	
