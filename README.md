@@ -11,8 +11,8 @@ Block apps from accessing the internet by providing a list of package name in /d
 Forces DNS server by redirecting all udp port 53 traffic to ip address stored in /data/nameserver. If a file is not provided, it will create one as an example with google DNS 8.8.8.8.
 
 
-Packaging for installing with custom android recoveries:
+Packaging for installation with custom android recoveries:
 
 	zip -r ../install.zip .
-	
-The repository itself is a working folder when I was making this.
+
+For other devices, I suggest that you just change the method of launching firewall.sh, such as /system/etc/init.d, if your firmware supports running scripts there with privilege, or any user/group selinux context combination that allows you to run iptables and read-write /data. Of course you can modify that too.
