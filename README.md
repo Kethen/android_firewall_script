@@ -9,3 +9,10 @@ Features(/system/etc/firewall.sh):
 Block apps from accessing the internet by providing a list of package name in /data/appNetBlacklist_last. As an example by default if the list file does not exist it will create a file that blocks the English/international version of wps office's outgoing traffic.
 
 Forces DNS server by redirecting all udp port 53 traffic to ip address stored in /data/nameserver. If a file is not provided, it will create one as an example with google DNS 8.8.8.8.
+
+
+Packaging for installing with custom android recoveries:
+
+	zip -r ../install.zip .
+	
+The repository itself is a working folder when I was making this.
