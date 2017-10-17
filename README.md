@@ -1,3 +1,5 @@
+** moved to https://github.com/Kethen/android_tweak_scripts
+
 A simple iptable script android firewall flashable, mainly for forcing DNS server for cellular networks(current implementation forces DNS on WiFi conenction too) and blocking certain apps from sending any outputs hence potato that app's network capability. This was made before I realise that lineageos or Android Nougat in general can ground apps and disconnect them from the internet but it was still a fun learning experience poking with android init files as well as discovering playing around with modern android recovery's addon.d feature.
 
 If you're flashing it please note that this was only tested on lineageos 14.1 with su addon.
